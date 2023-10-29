@@ -254,6 +254,8 @@ const Wrapper = styled.section`
         }
 
         button {
+          background-color: transparent;
+          cursor: pointer;
           .icon {
               margin-left: 10px;
             }

@@ -69,23 +69,23 @@ export const SkillSet=[
     },
     {
         id: "14",
-        name: "MySQL",
-        imgsrc: "images/mysql.png"
-    },
-    {
-        id: "15",
         name: "Github",
         imgsrc: "images/github.png"
     },
     {
-        id: "16",
+        id: "15",
         name: "Firebase",
         imgsrc: "images/firebase.png"
     },
     {
-        id: "17",
+        id: "16",
         name: "Netlify",
         imgsrc: "images/netlify.png"
+    },
+    {
+        id: "17",
+        name: "Vercel",
+        imgsrc: "images/vercel.png"
     },
     {
         id: "18",
@@ -102,6 +102,11 @@ export const SkillSet=[
         id: "20",
         name: "Canva",
         imgsrc: "images/canva.png"
+    },
+    {
+        id: "20",
+        name: "Redux",
+        imgsrc: "images/redux.png"
     },
 
 ]

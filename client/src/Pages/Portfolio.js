@@ -43,14 +43,14 @@ const Portfolio = () => {
   return (
     <Wrapper>
       <div className="card-inner p-section">
-        <div className="card-wrap overflow-hidden">
+        <div className="card-wrap">
           <div className="content work">
             <div className="title" data-aos="fade-up">
               <span className="first-word">Recent </span>
               Works
             </div>
           </div>
-          <div className="p-btns flex justify-center items-center" data-aos="fade-up">
+          <div className="p-btns" data-aos="fade-up">
             
             <button
               className={`btn p-btn ${isActive === "all" ? "active" : ""}`}
@@ -78,7 +78,7 @@ const Portfolio = () => {
           }
            
           </div>
-          <motion.div layout className="grid-items relative grid">
+          <motion.div layout className="grid-items">
             <AnimatePresence>
               {items &&
                 items.map((item) => <Works key={item.id} item={item} />)}
@@ -95,6 +95,7 @@ export default Portfolio;
 const Wrapper = styled.section`
 
   .card-wrap {
+    overflow: hidden;
     padding-bottom: 30px;
   }
   .content {
@@ -119,6 +120,8 @@ const Wrapper = styled.section`
   }
 
   .p-section .grid-items {
+    position: relative;
+    display: grid;
     max-width: 100vh;
     max-height: 450px;
     padding: 10px;
@@ -130,11 +133,19 @@ const Wrapper = styled.section`
     overflow-y: scroll;
 
     .grid-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0px;
       padding-bottom: 20px;
       flex: 1 0 0%;
     }
     .grid-item {
       .box-item {
+        position: relative;
+      text-align: center;
+      overflow: hidden;
         width: 100%;
         &:hover {
           img {
@@ -144,9 +155,7 @@ const Wrapper = styled.section`
             color: ${({ theme }) => theme.highlight.primary};
           }
           .icon-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline;
           }
         }
         .icon-box {
@@ -172,6 +181,10 @@ const Wrapper = styled.section`
           }
         }
         .image {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
           border-radius: 4px;
           a {
             display: initial;
@@ -212,6 +225,9 @@ const Wrapper = styled.section`
     }
   }
   .p-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 0;
   }
 

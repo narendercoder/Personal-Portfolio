@@ -1,18 +1,4 @@
-@tailwind base;
-@tailwind components;
-.row{
-  @apply flex flex-wrap
-}
-.col {
-  @apply flex-1
-}
-.col-6{
-  @apply w-1/2 flex-auto
-}
-.col-12 {
-  @apply w-full flex-auto
-}
-@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -20,6 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -42,6 +30,7 @@ body {
 html {
   font-size: 100%;
 }
+
 @media (max-width: 360px) {
   html {
     font-size: 80%;

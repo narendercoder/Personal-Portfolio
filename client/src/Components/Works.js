@@ -9,10 +9,10 @@ const Works = ({item}) => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       layout
-      className="grid-item photo relative flex justify-center items-center pt-0"
+      className="grid-item photo"
     >
-      <div className="box-item relative text-center overflow-hidden">
-        <div className="image relative overflow-hidden w-full h-full">
+      <div className="box-item">
+        <div className="image">
           <a href={item.href} aria-label={item.name}>
             <div className="icon-box">
               <MdOutlineRemoveRedEye

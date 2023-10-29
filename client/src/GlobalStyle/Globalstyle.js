@@ -79,6 +79,21 @@ span{
   color:  ${({ theme }) => theme.title.primary};
 }
 
+.row{
+  display: flex;
+  flex-wrap: wrap
+}
+.col {
+  flex: 1 1 0%;
+}
+.col-6{
+  width: 50%;;
+  flex: 1 1 auto;
+}
+.col-12 {
+  width: 100%; 
+  flex: 1 1 auto;
+}
 
 .card-section{
   &::after{
@@ -98,6 +113,7 @@ span{
   overflow-x: hidden;
   background: ${({ theme }) => theme.gradient.bgGradient};
   transition: all 0.5s;
+  overflow:  hidden;
 
   .content .title {
       color: ${({ theme }) => theme.title.primary};;
