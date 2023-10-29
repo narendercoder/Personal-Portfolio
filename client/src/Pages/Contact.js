@@ -217,10 +217,7 @@ const Wrapper = styled.section`
     }
 
     input:focus, textarea:focus{
-      color: white;
       border-bottom: 1px solid ${({ theme }) => theme.highlight.primary};
-
-
     }
    
     .title {
