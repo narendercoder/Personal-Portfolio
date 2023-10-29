@@ -111,6 +111,7 @@ const Wrapper = styled.section`
       border-radius: 4px;
       z-index: 2;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
       .nav-link {
         height: auto;
 
