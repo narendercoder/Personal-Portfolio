@@ -95,6 +95,7 @@ span{
   flex: 1 1 auto;
 }
 
+
 .card-section{
   &::after{
     background: rgb(49, 49, 58);
