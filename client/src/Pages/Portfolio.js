@@ -202,7 +202,21 @@ const Wrapper = styled.section`
           position: relative;
           padding: 15px 0 0 0;
           margin-bottom: 1rem;
-          
+          .text-center{
+            /* text-align: left; */
+            text-transform: capitalize;
+            height: 100%;
+            padding-bottom: 5px;
+            &::before {
+              right: auto;
+              left: 0;
+              bottom: 0;
+              top: auto;
+              width: 100%;
+              height: 1px;
+              opacity: 0.5;
+            }
+          }
           a {
             font-size: 0.95rem;
             display: flex;

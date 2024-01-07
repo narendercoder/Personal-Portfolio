@@ -32,9 +32,12 @@ const Works = ({item}) => {
           </a>
         </div>
         <div className="desc title">
-          <a href={item.href} className="link name">
+          <a href={item.href} className="name">
             {item.name}
           </a>
+          <p className="link text-center">
+            {item.desc}
+          </p>
         </div>
       </div>
     </motion.div>

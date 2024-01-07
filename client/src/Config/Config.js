@@ -114,80 +114,92 @@ export const SkillSet=[
 export const ProjImg = [
     {
         id: "1",
-        name: "Bhagavad Gita",
-        category: "react",
-        imgsrc: "projectImg/react/p_01.jpg",
-        href: "https://bhagavad-gita-gyan.vercel.app/"
-    },
-    {
-        id: "2",
-        name: "NotePlus",
-        category: "react",
-        imgsrc: "projectImg/react/p_7.png",
-        href: "https://note-plus-react.vercel.app"
-    },
-    {
-        id: "3",
-        name: "Pokemon-app",
-        category: "react",
-        imgsrc: "projectImg/react/p_0.jpg",
-        href: "https://react-pokemon-app1.netlify.app/"
-    },
-    {
-        id: "4",
-        name: "Crypto-Tracker",
-        category: "react",
-        imgsrc: "projectImg/react/p_1.jpg",
-        href: "https://crypto-tracker1.netlify.app/"
-    },
-    {
-        id: "5",
-        name: "Weather-app",
-        category: "react",
-        imgsrc: "projectImg/react/p_2.jpg",
-        href: "https://weather-app-132.netlify.app/"
-    },
-    {
-        id: "6",
-        name: "Snake Game",
-        category: "javascript",
-        imgsrc: "projectImg/js/p_0.jpg",
-        href: "https://narendercoder.github.io/Snake-Game/"
-    },
-    {
-        id: "7",
-        name: "Spotify",
-        category: "javascript",
-        imgsrc: "projectImg/js/p_1.jpg",
-        href: "https://narendercoder.github.io/Spotify/"
-    },
-    {
-        id: "8",
-        name: "Todolist",
-        category: "react",
-        imgsrc: "projectImg/react/p_4.jpg",
-        href: "https://todolist82.netlify.app/"
-    },
-    {
-        id: "9",
-        name: "Tic-Tac-toe",
-        category: "javascript",
-        imgsrc: "projectImg/js/p_2.jpg",
-        href: "https://narendercoder.github.io/Tic_Tac_Toe/"
-    },
-    {
-        id: "10",
         name: "E-talk",
         category: "react",
         imgsrc: "projectImg/react/p_5.png",
-        href: "https://e-talk.vercel.app/"
+        href: "https://e-talk.vercel.app/",
+        desc:"It is a real-time chat application built using MERN stack and Socket.io to allowmultiple users to communicate One to One and Group Chat, real-timesending and receiving messages"
     },
+    {
+        id: "2",
+        name: "Bhagavad Gita",
+        category: "react",
+        imgsrc: "projectImg/react/p_01.jpg",
+        href: "https://bhagavad-gita-gyan.vercel.app/",
+        desc: "It is a platform built using MERN Stack for exploring the teachings, verses, translations, and commentaries of the Bhagavad Gita."
+    },
+    {
+        id: "3",
+        name: "NotePlus",
+        category: "react",
+        imgsrc: "projectImg/react/p_7.png",
+        href: "https://note-plus-react.vercel.app",
+        desc: "Note Taking application built using MERN Stack that enables users to manage and organize their notes effectively."
+    },
+    {
+        id: "4",
+        name: "Pokemon-app",
+        category: "react",
+        imgsrc: "projectImg/react/p_0.jpg",
+        href: "https://react-pokemon-app1.netlify.app/",
+        desc: "A Pokemon website created using ReactJs, material Ui, and poke API that shows different types of Pokemon with their description, abilities, and evolution."
+    },
+    {
+        id: "5",
+        name: "Crypto-Tracker",
+        category: "react",
+        imgsrc: "projectImg/react/p_1.jpg",
+        href: "https://crypto-tracker1.netlify.app/",
+        desc: "A crypto tracking website for displaying crypto-currency and tracking their current prices, market caps and show their history chart. Build using React js, Material UI, and Chart Js with Coin Gecko API."
+    },
+    {
+        id: "6",
+        name: "Weather-app",
+        category: "react",
+        imgsrc: "projectImg/react/p_2.jpg",
+        href: "https://weather-app-132.netlify.app/",
+        desc: "A Weather application built using ReactJS and openweather API  to allow users to search for and view the forecast in cities worldwide."
+    },
+    {
+        id: "7",
+        name: "Snake Game",
+        category: "javascript",
+        imgsrc: "projectImg/js/p_0.jpg",
+        href: "https://narendercoder.github.io/Snake-Game/",
+        desc: "A Snake Game using HTML, CSS, JavaScript."
+    },
+    {
+        id: "8",
+        name: "Spotify",
+        category: "javascript",
+        imgsrc: "projectImg/js/p_1.jpg",
+        href: "https://narendercoder.github.io/Spotify/",
+        desc: "A simple music player using HTML, CSS, JavaScript."
+    },
+    {
+        id: "9",
+        name: "Todolist",
+        category: "react",
+        imgsrc: "projectImg/react/p_4.jpg",
+        href: "https://todolist82.netlify.app/",
+        desc: "A simple Todolist using ReactJS"
+    },
+    {
+        id: "10",
+        name: "Tic-Tac-toe",
+        category: "javascript",
+        imgsrc: "projectImg/js/p_2.jpg",
+        href: "https://narendercoder.github.io/Tic_Tac_Toe/",
+        desc: "A Tic-Tac-Toe Game using HTML, CSS, JavaScript."
+    },
+   
     {
         id: "11",
         name: "E-commerce",
         category: "react",
         imgsrc: "projectImg/react/p_6.png",
-        href: "https://e-trade.netlify.app/"
+        href: "https://e-trade.netlify.app/",
+        desc: ""
     },
     
     ]
