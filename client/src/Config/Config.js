@@ -203,7 +203,7 @@ export const ProjImg = [
     },
     
     ]
-export const Experience=[
+export const Experience = [
     {
         id: "1",
         date: "Mar 2024 - Present",
