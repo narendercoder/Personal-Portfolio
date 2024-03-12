@@ -204,16 +204,22 @@ export const ProjImg = [
     
     ]
 export const Experience=[
-    
     {
         id: "1",
+        date: "Mar 2024 - Present",
+        name: "Web Developer Intern",
+        company: "BasketHunt Pvt. Ltd.",
+        desc: []
+    },
+    {
+        id: "2",
         date: "Sep 2021 - Mar 2022",
         name: "Graphic Designer",
         company: "Dharaksha Ecosolutions",
         desc: ["Collaborate with social media teams.","Design and update website.","Design different media post on Instagram."]
     },
     {
-        id: "2",
+        id: "3",
         date: "Feb 2020 - Present",
         name: "Digital Artist",
         company: "",
