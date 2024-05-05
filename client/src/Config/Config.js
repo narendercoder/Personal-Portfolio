@@ -34,81 +34,91 @@ export const SkillSet=[
     },
     {
         id: "7",
-        name: "ReactJs",
-        imgsrc: "images/React.png"
-    },
-    {
-        id: "8",
         name: "Material-ui",
         imgsrc: "images/Material-ui.png"
     },
     {
-        id: "9",
+        id: "8",
         name: "Sass",
         imgsrc: "images/SASS.png"
     },
     {
+        id: "9",
+        name: "Tailwind CSS",
+        imgsrc: "images/tailwind-css.png"
+    },
+    {
         id: "10",
+        name: "ReactJs",
+        imgsrc: "images/React.png"
+    },
+    {
+        id: "11",
         name: "Node Js",
         imgsrc: "images/nodejs.png"
     },
     {
-        id: "11",
+        id: "12",
         name: "Express",
         imgsrc: "images/express.png"
     },
     {
-        id: "12",
+        id: "13",
         name: "Next Js",
         imgsrc: "images/Nextjs-logo.svg"
     },
     {
-        id: "13",
+        id: "14",
         name: "MongoDB",
         imgsrc: "images/mongodb.png"
     },
     {
-        id: "14",
+        id: "15",
         name: "Github",
         imgsrc: "images/github.png"
     },
     {
-        id: "15",
+        id: "16",
         name: "Firebase",
         imgsrc: "images/firebase.png"
     },
     {
-        id: "16",
+        id: "17",
         name: "Netlify",
         imgsrc: "images/netlify.png"
     },
     {
-        id: "17",
+        id: "18",
         name: "Vercel",
         imgsrc: "images/vercel.png"
     },
     {
-        id: "18",
+        id: "22",
+        name: "Redux",
+        imgsrc: "images/redux.png"
+    },
+    {
+        id: "23",
+        name: "Figma",
+        imgsrc: "images/figma.png"
+    },
+    {
+        id: "19",
         name: "Illustrator",
         imgsrc: "images/Illustrator.png"
     },
 
     {
-        id: "19",
+        id: "20",
         name: "Photoshop",
         imgsrc: "images/Photoshop.png"
     },
     {
-        id: "20",
+        id: "21",
         name: "Canva",
         imgsrc: "images/canva.png"
-    },
-    {
-        id: "20",
-        name: "Redux",
-        imgsrc: "images/redux.png"
-    },
-
+    }
+    
 ]
 
 export const ProjImg = [

@@ -83,7 +83,7 @@ function Resume() {
               Skills
             </div>
             <div className="row grid-items border-line-v">
-              <ul className="grid-item">
+              <ul className="grid-item skill-sets">
                 {SkillSet && SkillSet.map((val, ind) => (
                     <li key={val.id}>
                       <div className="cards">
@@ -169,6 +169,7 @@ const Wrapper = styled.section`
     align-items: center;
     border: 1px solid ${({ theme }) => theme.highlight.primary};
     border-radius: 10px;
+    transition: all 0.2s;
     cursor: pointer;
     &:after {
       content: "";
