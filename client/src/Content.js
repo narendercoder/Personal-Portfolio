@@ -6,17 +6,8 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
 import ErrorPage from "./Pages/ErrorPage";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Contact from "./Pages/Contact";
 import Header from "./Components/Header";
-
-
-AOS.init({
-  once: true,
-  duration: 1000,
-  offset: -200,
-});
 
 
 const Content = () =>{

@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { useGlobalContext } from "../Context";
 import { toast } from 'react-toastify';
 import axios from "axios"
+import { motion } from "framer-motion";
+import { fadeIn } from "../varients";
 
 function Contact() {
 
@@ -99,10 +101,15 @@ const handleSubmit = async (e) => {
       <section className="card-inner contacts" id="contacts-card">
         <div className="card-wrap">
           <div className="content contacts">
-            <div className="title" data-aos="fade-up">
+            <motion.div
+             variants={fadeIn("up", 0.2, 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+             className="title">
               <span className="first-word">Get </span>
               in Touch
-            </div>
+            </motion.div>
             <div className="row">
               <div className="col col-12 border-line-v ">
                

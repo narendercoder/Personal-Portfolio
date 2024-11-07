@@ -3,7 +3,8 @@ import { SkillSet } from "../Config/Config";
 import { Experience, Education } from "../Config/Config";
 import { FaUniversity, FaBriefcase } from "react-icons/fa";
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../varients";
 
 function Resume() {
   return (
@@ -11,28 +12,42 @@ function Resume() {
       <div className="card-inner" id="resume">
         <div className="card-wrap">
           <div className="content resume">
-            <div className="title" data-aos="fade-up">
+            <div className="title">
               <span>Resume</span>
             </div>
             <div className="row">
               <div className="col col-6  border-line-v">
                 <div className="resume-title border-line-h" >
-                  <div className="icon" data-aos="fade-up">
+                  <motion.div
+                   variants={fadeIn("up", 0.2, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+                   className="icon">
                     <FaBriefcase />
-                  </div>
-                  <div className="name" data-aos="fade-up">Experience</div>
+                  </motion.div>
+                  <motion.div
+                   variants={fadeIn("up", 0.2, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+                  className="name">Experience</motion.div>
                 </div>
                 <div className="resume-items">
                   {Experience &&
                     Experience.map((val, ind) => (
-                      <div
+                      <motion.div
+                        variants={fadeIn("up",(ind + 1)*0.1 + 0.1, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
                         key={val.id}
                         className={
                           val.date.includes("Present")
                             ? `${"resume"}-${"item"} ${"active"} ${"border"}-${"line"}-${"h"}`
                             : `${"resume"}-${"item"} ${"border"}-${"line"}-${"h"}`
                         }
-                        data-aos="fade-up" data-aos-delay={(ind+1)*100}
+                        
                       >
                         <div className="date">{val.date}</div>
                         <div className="name">{val.name}</div>
@@ -44,48 +59,73 @@ function Resume() {
                             ))}
                           </ul>
                         </div>
-                      </div>
+                      </motion.div>
                     ))}
                 </div>
               </div>
-              <div className="col col-6  border-line-v">
+              <div className="col col-6 border-line-v">
                 <div className="resume-title border-line-h">
-                  <div className="icon" data-aos="fade-up">
+                  <motion.div
+                  variants={fadeIn("up", 0.2, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+                   className="icon">
                     <FaUniversity />
-                  </div>
-                  <div className="name" data-aos="fade-up">Education</div>
+                  </motion.div>
+                  <motion.div 
+                  variants={fadeIn("up", 0.2, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+                  className="name" >Education</motion.div>
                 </div>
                 <div className="resume-items">
                   {Education &&
                     Education.map((val, ind) => (
-                      <div
+                      <motion.div
+                      variants={fadeIn("up", (ind + 1)*0.1 + 0.1, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
                         key={val.id}
                         className={
                           val.date.includes("Present")
                             ? `${"resume"}-${"item"} ${"active"} ${"border"}-${"line"}-${"h"}`
                             : `${"resume"}-${"item"} ${"border"}-${"line"}-${"h"}`
                         }
-                        data-aos="fade-up" data-aos-delay={(ind+1)*100}
+                        
                       >
                         <div className="date">{val.date}</div>
                         <div className="name">{val.name}</div>
                         <div className="company">{val.company}</div>
                         <p>{val.desc}</p>
-                      </div>
+                      </motion.div>
                     ))}
                 </div>
               </div>
             </div>
           </div>
           <div className="content skills">
-            <div className="title">
+            <motion.div 
+             variants={fadeIn("up", 0.2, 1)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+            className="title">
               <span className="first-word">My </span>
               Skills
-            </div>
+            </motion.div>
             <div className="row grid-items border-line-v">
               <ul className="grid-item skill-sets">
                 {SkillSet && SkillSet.map((val, ind) => (
-                    <li key={val.id}>
+                    <motion.li 
+                     variants={fadeIn("up", (ind)*0.05, 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+                    key={val.id} 
+                    >
                       <div className="cards">
                         <div className="card-img">
                           <img
@@ -99,7 +139,7 @@ function Resume() {
                           <span className="title">{val.name}</span>
                         </div>
                       </div>
-                    </li>
+                    </motion.li>
                   ))}
               </ul>
             </div>

@@ -236,6 +236,7 @@ input[type="submit"] {
   transform-origin: center left;
   ${'' /* z-index: 10; */}
   animation: fadeInLeft 1s;
+  overflow: hidden;
 
   &:before,
   &:after {
@@ -244,6 +245,7 @@ input[type="submit"] {
 
   &:before,
   &:after {
+    width: 100%;
     height: 30px;
   }
 
@@ -380,9 +382,13 @@ input[type="submit"] {
   height: 100%;
   background: radial-gradient(ellipse at top,  rgba(197, 202, 213, 0.7) 0%,  rgba(255, 255, 255, 0) 70%);
 }
+
+
+
 .row .col.border-line-v:first-child:before {
   display: none;
 }
+
 ol,
 ul,
 li {
@@ -500,16 +506,7 @@ col {
   display: block;
 }
 
-@media (max-width: 560px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    padding-bottom: 10px;
-  }
-}
+
 
 @media (min-width: 560px) and (max-width: 1199px) {
   .container {
@@ -602,6 +599,7 @@ a:hover {
     position: relative;
     margin-top: 10px;
   }
+
 }
 @media (min-width: 560px){
   .skills .grid-items {
@@ -619,6 +617,28 @@ a:hover {
       }
     }
   }
+}
+
+@media (max-width: 560px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 10px;
+  }
+  .border-line-v:before{
+    opacity:0
+  }
+
+  .card-inner{
+    height: 100%;
+    .card-wrap{
+      overflow: hidden;
+    }
+  }
+
 }
 
 .grid-item {

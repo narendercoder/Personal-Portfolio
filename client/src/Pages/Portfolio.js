@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { ProjImg } from "../Config/Config";
 import { AnimatePresence, motion } from "framer-motion";
 import Works from "../Components/Works";
+import { fadeIn } from "../varients";
 
 const Portfolio = () => {
   const [isActive, SetIsActive] = useState("all")
@@ -45,13 +46,22 @@ const Portfolio = () => {
       <div className="card-inner p-section">
         <div className="card-wrap">
           <div className="content work">
-            <div className="title" data-aos="fade-up">
+            <motion.div 
+             variants={fadeIn("up", 0.2, 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+            className="title">
               <span className="first-word">Recent </span>
               Works
-            </div>
+            </motion.div>
           </div>
-          <div className="p-btns" data-aos="fade-up">
-            
+          <motion.div 
+           variants={fadeIn("up", 0.2, 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true }} 
+          className="p-btns" >
             <button
               className={`btn p-btn ${isActive === "all" ? "active" : ""}`}
               data-btn-num="2"
@@ -77,7 +87,7 @@ const Portfolio = () => {
             })
           }
            
-          </div>
+          </motion.div>
           <motion.div layout className="grid-items">
             <AnimatePresence>
               {items &&
