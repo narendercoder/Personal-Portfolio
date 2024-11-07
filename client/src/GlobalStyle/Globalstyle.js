@@ -115,6 +115,7 @@ span{
   background: ${({ theme }) => theme.gradient.bgGradient};
   transition: all 0.5s;
   overflow:  hidden;
+  animation: fadeIn 2s ease-in-out forwards;
 
   .content .title {
       color: ${({ theme }) => theme.title.primary};;
@@ -129,6 +130,15 @@ span{
       }
     }
 
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .border-line-h:after {
