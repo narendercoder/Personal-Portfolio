@@ -4,8 +4,7 @@ import styled from "styled-components";
 import { useGlobalContext } from "../Context";
 import { toast } from 'react-toastify';
 import axios from "axios"
-import { motion } from "framer-motion";
-import { fadeIn } from "../varients";
+import Slide from "../Components/Slide";
 
 function Contact() {
 
@@ -101,16 +100,15 @@ const handleSubmit = async (e) => {
       <section className="card-inner contacts" id="contacts-card">
         <div className="card-wrap">
           <div className="content contacts">
-            <motion.div
-             variants={fadeIn("up", 0.2, 0.5)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
+            <Slide
+             delay={0.1} duration={0.5}
              className="title">
               <span className="first-word">Get </span>
               in Touch
-            </motion.div>
-            <div className="row">
+            </Slide>
+            <Slide 
+              delay={0.15} duration={0.5}
+            className="row">
               <div className="col col-12 border-line-v ">
                
                     <div className="map">
@@ -135,19 +133,19 @@ const handleSubmit = async (e) => {
                     </div>
                   
               </div>
-            </div>
+            </Slide>
             <div className="content contacts">
-              <div className="title">
+              <Slide delay={0.2} duration={0.5} className="title">
                 <span className="first-word">Contact </span>
                 Form
-              </div>
+              </Slide>
               <div className="row">
                 <div className="col col-12 border-line-v">
                   <div className="contact_form">
                     <form id="cform" method="post" noValidate="novalidate">
                       <div className="row">
                         <div className="col col-6">
-                          <div className="group-val">
+                          <Slide   delay={0.25} duration={0.5} className="group-val">
                             <input
                               type="text"
                               name="name"
@@ -156,10 +154,10 @@ const handleSubmit = async (e) => {
                               onChange={handleChange}
                               required
                             ></input>
-                          </div>
+                          </Slide>
                         </div>
                         <div className="col col-6">
-                          <div className="group-val">
+                          <Slide   delay={0.3} duration={0.5} className="group-val">
                             <input
                               type="text"
                               name="email"
@@ -168,10 +166,10 @@ const handleSubmit = async (e) => {
                               onChange={handleChange}
                               required
                             ></input>
-                          </div>
+                          </Slide>
                         </div>
                         <div className="col col-12">
-                          <div className="group-val">
+                          <Slide delay={0.35} duration={0.5} className="group-val">
                             <textarea
                               name="message"
                               placeholder="Your Message"
@@ -179,17 +177,17 @@ const handleSubmit = async (e) => {
                               onChange={handleChange}
                               required
                             ></textarea>
-                          </div>
+                          </Slide>
                         </div>
                       </div>
-                      <div className="align-left">
+                      <Slide delay={0.4} duration={0.5} className="align-left">
                         <button className="button" onClick={handleSubmit}>
                           <span className="text">Send Message</span>
                           <span className="icon">
                             <FaTelegramPlane />
                           </span>
                         </button>
-                      </div>
+                      </Slide>
                     </form>
                   </div>
                 </div>

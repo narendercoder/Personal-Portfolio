@@ -9,6 +9,7 @@ import {
   FaCloudDownloadAlt,
 } from "react-icons/fa";
 import styled from "styled-components";
+import Slide from "../Components/Slide";
 
 const Home = () => {
   return (
@@ -21,9 +22,9 @@ const Home = () => {
               <img src="/assets/profile(1).jpg" alt="profile" loading="lazy" />
             </div>
           </div>
-          <div className="title" data-aos="fade-up">
+          <Slide delay={0.1} duration={1} className="title">
             <h1>Narender Singh Bisht</h1>
-          </div>
+          </Slide>
           <div className="subtitle subtitle-typed">
             <TypeWriterEffect
               textStyle={{
@@ -41,63 +42,63 @@ const Home = () => {
             />
           </div>
           <div className="social">
-            <a
-              className="link"
+            <Slide delay={0.1} duration={1} className={"link"}>
+            <a 
               href="https://www.facebook.com/narender.singhbisht.3538"
               rel="noreferrer"
               target="_blank"
               aria-label="facebook"
             >
-              <FaFacebook data-aos="fade-up" data-aos-delay="100" />
+              <FaFacebook />
             </a>
+            </Slide>
+            <Slide delay={0.1} duration={1} className="link">
             <a
-              className="link"
               href="https://www.instagram.com/artist_narender/"
               rel="noreferrer"
               target="_blank"
               aria-label="instagram"
             >
-              <FaInstagram data-aos="fade-up" data-aos-delay="200" />
+              <FaInstagram />
             </a>
+            </Slide>
+            <Slide delay={0.1} duration={1} className="link">
             <a
-              className="link"
               href="https://www.linkedin.com/in/narender-singh-bisht-4529051b7/"
               rel="noreferrer"
               target="_blank"
               aria-label="linkedin"
             >
-              <FaLinkedin data-aos="fade-up" data-aos-delay="300" />
+              <FaLinkedin />
             </a>
+            </Slide>
+            <Slide delay={0.1} duration={1} className="link">
             <a
-              className="link"
               href="https://github.com/narendercoder"
               rel="noreferrer"
               target="_blank"
               aria-label="github"
             >
-              <FaGithub data-aos="fade-up" data-aos-delay="500" />
+              <FaGithub />
             </a>
+            </Slide>
           </div>
           <div className="links">
+            <Slide delay={0.1} duration={1} className="link">
             <a
               href="/assets/Resume.pdf"
-              className="link"
               rel="noreferrer"
               target="_blank"
-              data-aos="fade-up"
-              data-aos-delay="100"
             >
               <span className="text">download CV</span>
               <FaCloudDownloadAlt className="icon d-icon" />
             </a>
-            <Link
-              to="/contact"
-              className="link"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <span className="text">Contact me</span>
-            </Link>
+            </Slide>
+            <Slide delay={0.1} duration={1} className="link">
+              <Link to="/contact" >
+                <span className="text">Contact me</span>
+              </Link>
+            </Slide>
           </div>
         </div>
       </section>
@@ -234,7 +235,7 @@ const Wrapper = styled.section`
         position: relative;
         margin: 16px 0 0 0;
 
-        a {
+        .link {
           position: relative;
           display: block;
           line-height: normal;

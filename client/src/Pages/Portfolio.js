@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-
 import styled from "styled-components";
 import { ProjImg } from "../Config/Config";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Works from "../Components/Works";
-import { fadeIn } from "../varients";
+import Slide from "../Components/Slide";
+import {motion } from "framer-motion";
 
 const Portfolio = () => {
   const [isActive, SetIsActive] = useState("all")
   const [items, setitems] = useState([]);
   const [collection, setCollection] = useState([]);
+
 
   const sortItem = (Items) =>{
     const result = Items.sort(function (a, b) {
@@ -39,6 +40,8 @@ const Portfolio = () => {
   useEffect(()=>{
      setitems(ProjImg);
      setCollection([...new Set(ProjImg.map((item)=>item.category))])
+
+  
   }, [])
 
   return (
@@ -46,22 +49,16 @@ const Portfolio = () => {
       <div className="card-inner p-section">
         <div className="card-wrap">
           <div className="content work">
-            <motion.div 
-             variants={fadeIn("up", 0.2, 0.5)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
+            <Slide
+             delay={0.1} duration={1}
             className="title">
               <span className="first-word">Recent </span>
               Works
-            </motion.div>
+            </Slide>
           </div>
-          <motion.div 
-           variants={fadeIn("up", 0.2, 0.5)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-          className="p-btns" >
+          <Slide
+             delay={0.1} duration={1}
+            className="p-btns" >
             <button
               className={`btn p-btn ${isActive === "all" ? "active" : ""}`}
               data-btn-num="2"
@@ -87,13 +84,15 @@ const Portfolio = () => {
             })
           }
            
-          </motion.div>
+          </Slide>
+          <Slide delay={0.2} duration={1}>
           <motion.div layout className="grid-items">
             <AnimatePresence>
               {items &&
                 items.map((item) => <Works key={item.id} item={item} />)}
             </AnimatePresence>
           </motion.div>
+          </Slide>
         </div>
       </div>
     </Wrapper>
@@ -141,12 +140,13 @@ const Wrapper = styled.section`
     grid-row-gap: 0rem;
     margin: 0 -30px;
     overflow-y: scroll;
+    z-index: 1;
 
     .grid-item {
       position: relative;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       padding-top: 0px;
       padding-bottom: 20px;
       flex: 1 0 0%;
@@ -253,6 +253,7 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    z-index: 10;
   }
 
   .p-btn {

@@ -3,118 +3,118 @@ import { IoBrushOutline } from 'react-icons/io5';
 
 export const SkillSet=[
     {
-        id: "1",
+        id: 1,
         name: "C",
         imgsrc: "images/C.png"
     },
     {
-        id: "2",
+        id: 2,
         name: "C++",
         imgsrc: "images/C++.png"
     },
     {
-        id: "3",
+        id: 3,
         name: "HTML 5",
         imgsrc: "images/HTML5.png"
     },
     {
-        id: "4",
+        id: 4,
         name: "CSS 3",
         imgsrc: "images/CSS3.png"
     },
     {
-        id: "5",
+        id: 5,
         name: "Javascript",
         imgsrc: "images/javascript.png"
     },
     {
-        id: "6",
+        id: 6,
         name: "Bootstrap",
         imgsrc: "images/Bootstrap.png"
     },
     {
-        id: "7",
+        id: 7,
         name: "Material-ui",
         imgsrc: "images/Material-ui.png"
     },
     {
-        id: "8",
+        id: 8,
         name: "Sass",
         imgsrc: "images/SASS.png"
     },
     {
-        id: "9",
+        id: 9,
         name: "Tailwind CSS",
         imgsrc: "images/tailwind-css.png"
     },
     {
-        id: "10",
+        id: 10,
         name: "ReactJs",
         imgsrc: "images/React.png"
     },
     {
-        id: "11",
+        id: 11,
         name: "Node Js",
         imgsrc: "images/nodejs.png"
     },
     {
-        id: "12",
+        id: 12,
         name: "Express",
         imgsrc: "images/express.png"
     },
     {
-        id: "13",
+        id: 13,
         name: "Next Js",
         imgsrc: "images/Nextjs-logo.svg"
     },
     {
-        id: "14",
+        id: 14,
         name: "MongoDB",
         imgsrc: "images/mongodb.png"
     },
     {
-        id: "15",
+        id: 15,
         name: "Github",
         imgsrc: "images/github.png"
     },
     {
-        id: "16",
+        id: 16,
         name: "Firebase",
         imgsrc: "images/firebase.png"
     },
     {
-        id: "17",
+        id: 17,
         name: "Netlify",
         imgsrc: "images/netlify.png"
     },
     {
-        id: "18",
+        id: 18,
         name: "Vercel",
         imgsrc: "images/vercel.png"
     },
     {
-        id: "22",
+        id: 19,
         name: "Redux",
         imgsrc: "images/redux.png"
     },
     {
-        id: "23",
+        id: 20,
         name: "Figma",
         imgsrc: "images/figma.png"
     },
     {
-        id: "19",
+        id: 21,
         name: "Illustrator",
         imgsrc: "images/Illustrator.png"
     },
 
     {
-        id: "20",
+        id: 22,
         name: "Photoshop",
         imgsrc: "images/Photoshop.png"
     },
     {
-        id: "21",
+        id: 23,
         name: "Canva",
         imgsrc: "images/canva.png"
     }
@@ -123,113 +123,150 @@ export const SkillSet=[
 
 export const ProjImg = [
     {
-        id: "1",
+        id: 1,
         name: "E-talk",
         category: "react",
         imgsrc: "projectImg/react/p_5.png",
         href: "https://e-talk.vercel.app/",
-        desc:"It is a real-time chat application built using MERN stack and Socket.io to allowmultiple users to communicate One to One and Group Chat, real-timesending and receiving messages"
+        desc:"It is a real-time chat application built using MERN stack and Socket.io to allowmultiple users to communicate One to One and Group Chat, real-timesending and receiving messages",
+        blurhash: "LFBN+*VB:~Y8E+M{R4WV]vXoEnwY"
     },
     {
-        id: "2",
+        id: 2,
         name: "Bhagavad Gita",
         category: "react",
         imgsrc: "projectImg/react/p_01.jpg",
         href: "https://bhagavad-gita-gyan.vercel.app/",
-        desc: "It is a platform built using MERN Stack for exploring the teachings, verses, translations, and commentaries of the Bhagavad Gita."
+        desc: "It is a platform built using MERN Stack for exploring the teachings, verses, translations, and commentaries of the Bhagavad Gita.",
+        blurhash: "L6DvZjIA4.%h00E1xuMw_Ma}Mx%M"
     },
     {
-        id: "3",
+        id: 3,
         name: "NotePlus",
         category: "react",
         imgsrc: "projectImg/react/p_7.png",
         href: "https://note-plus-react.vercel.app",
-        desc: "Note Taking application built using MERN Stack that enables users to manage and organize their notes effectively."
+        desc: "Note Taking application built using MERN Stack that enables users to manage and organize their notes effectively.",
+        blurhash: "LBB:vzax?aWUD%IUMxWB~qRjD%%M"
     },
     {
-        id: "4",
+        id: 4,
         name: "Pokemon-app",
         category: "react",
         imgsrc: "projectImg/react/p_0.jpg",
         href: "https://react-pokemon-app1.netlify.app/",
-        desc: "A Pokemon website created using ReactJs, material Ui, and poke API that shows different types of Pokemon with their description, abilities, and evolution."
+        desc: "A Pokemon website created using ReactJs, material Ui, and poke API that shows different types of Pokemon with their description, abilities, and evolution.",
+        blurhash: "LACGV=I:%Ni_D%IUIVWB~qaKITx^"
     },
     {
-        id: "5",
+        id: 5,
         name: "Crypto-Tracker",
         category: "react",
         imgsrc: "projectImg/react/p_1.jpg",
         href: "https://crypto-tracker1.netlify.app/",
-        desc: "A crypto tracking website for displaying crypto-currency and tracking their current prices, market caps and show their history chart. Build using React js, Material UI, and Chart Js with Coin Gecko API."
+        desc: "A crypto tracking website for displaying crypto-currency and tracking their current prices, market caps and show their history chart. Build using React js, Material UI, and Chart Js with Coin Gecko API.",
+        blurhash: "LZI=7BD%~q%M.9IUt7bH?H%MRjj]"
     },
     {
-        id: "6",
+        id: 6,
         name: "Weather-app",
         category: "react",
         imgsrc: "projectImg/react/p_2.jpg",
         href: "https://weather-app-132.netlify.app/",
-        desc: "A Weather application built using ReactJS and openweather API  to allow users to search for and view the forecast in cities worldwide."
+        desc: "A Weather application built using ReactJS and openweather API  to allow users to search for and view the forecast in cities worldwide.",
+        blurhash: "LDB;F7WW$fWBNHM{MxWB}=RiIpx]"
     },
     {
-        id: "7",
+        id: 7,
         name: "Snake Game",
         category: "javascript",
         imgsrc: "projectImg/js/p_0.jpg",
         href: "https://narendercoder.github.io/Snake-Game/",
-        desc: "A Snake Game using HTML, CSS, JavaScript."
+        desc: "A Snake Game using HTML, CSS, JavaScript.",
+        blurhash: "LFA_,*Sd:JnlEKM{R6ae{Fi{GOxu"
     },
     {
-        id: "8",
+        id: 8,
         name: "Spotify",
         category: "javascript",
         imgsrc: "projectImg/js/p_1.jpg",
         href: "https://narendercoder.github.io/Spotify/",
-        desc: "A simple music player using HTML, CSS, JavaScript."
+        desc: "A simple music player using HTML, CSS, JavaScript.",
+        blurhash: "LCB:vyWB-;oLIAIUIoWB~qWBD%%M"
     },
     {
-        id: "9",
+        id: 9,
         name: "Todolist",
         category: "react",
         imgsrc: "projectImg/react/p_4.jpg",
         href: "https://todolist82.netlify.app/",
-        desc: "A simple Todolist using ReactJS"
+        desc: "A simple Todolist using ReactJS",
+        blurhash: "LBCGGnV|.4bVD%IUIoWB_JW9D+%N"
     },
     {
-        id: "10",
+        id: 10,
         name: "Tic-Tac-toe",
         category: "javascript",
         imgsrc: "projectImg/js/p_2.jpg",
         href: "https://narendercoder.github.io/Tic_Tac_Toe/",
-        desc: "A Tic-Tac-Toe Game using HTML, CSS, JavaScript."
+        desc: "A Tic-Tac-Toe Game using HTML, CSS, JavaScript.",
+        blurhash: "LBCGGnV|.4bVD%IUIoWB_JW9D+%N"
     },
-   
     {
-        id: "11",
+        id: 11,
         name: "E-commerce",
         category: "react",
         imgsrc: "projectImg/react/p_6.png",
         href: "https://e-trade.netlify.app/",
-        desc: ""
+        desc: "",
+        blurhash: "LBKd;{t800D%M{IUIURj00M{~W?b"
     },
+    {
+        id: 12,
+        name: "Moviex",
+        category: "react",
+        imgsrc: "projectImg/react/p_3.png",
+        href: "https://react-moviex.netlify.app/",
+        desc: "",
+        blurhash: "LAB4H~4Upfr;W8x_tTt79Zn#iaS%"
+    },
+    {
+        id: 13,
+        name: "YT Shorts",
+        category: "video",
+        imgsrc: "",
+        href: "DGEwZv-SDV4",
+        desc: "",
+        blurhash: "LAB4H~4Upfr;W8x_tTt79Zn#iaS%"
+    },
+    {
+        id: 14,
+        name: "graphics",
+        category: "graphics",
+        imgsrc: "",
+        href: "",
+        desc: "",
+        blurhash: "LAB4H~4Upfr;W8x_tTt79Zn#iaS%" 
+    }
     
     ]
 export const Experience = [
     {
-        id: "1",
+        id: 1,
         date: "Mar 2024 - May 2024",
         name: "Web Developer Intern",
         company: "BasketHunt Pvt. Ltd.",
         desc: ["Collaborated with web development teams to design and implement innovative user interface features, enhancing user engagement and functionality.", "Monitored technical aspects of the front-end delivery for several projects."]
     },
     {
-        id: "2",
+        id: 2,
         date: "Sep 2021 - Mar 2022",
         name: "Graphic Designer",
         company: "Dharaksha Ecosolutions",
         desc: ["Collaborate with social media teams.","Design and update website.","Design different media post on Instagram."]
     },
     {
-        id: "3",
+        id: 3,
         date: "Feb 2020 - Present",
         name: "Digital Artist",
         company: "",

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Services } from "../Config/Config";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { fadeIn } from "../varients";
+import Slide from "../Components/Slide";
 
 function About() {
   const [age, setAge] = useState("");
@@ -18,23 +17,13 @@ function About() {
       <div className="card-inner">
         <div className="card-wrap">
           <div className="content about">
-              <motion.div
-              variants={fadeIn("up", 0.1, 0.8)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: true }}
-              className="title">
-                <span className="first-word">About </span>
-                Me
-              </motion.div>
+            <Slide delay={0.1} duration={1} className="title">
+              <span className="first-word">About </span>
+              Me
+            </Slide>
             <div className="row">
               <div className="col col-6 border-line-v">
-                <motion.div
-                  variants={fadeIn("up", 0.2, 0.8)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: true }}
-                >
+                <Slide delay={0.1} duration={1}>
                   <div className="text-box">
                     <p>
                       <b>I'm</b>{" "}
@@ -50,15 +39,10 @@ function About() {
                       and technologies. I'm also a digital artist by passion.
                     </p>
                   </div>
-                </motion.div>
+                </Slide>
               </div>
               <div className="col col-6 border-line-v">
-                <motion.div 
-                 variants={fadeIn("up", 0.2, 0.8)}
-                  initial="hidden"
-                  whileInView={"show"}
-                  viewport={{ once: true }}
-                className="info-list">
+                <Slide delay={0.1} duration={1} className="info-list">
                   <ul>
                     <li>
                       <strong>Age: </strong>
@@ -77,92 +61,68 @@ function About() {
                       <strong>Residence: </strong>Delhi, India
                     </li>
                   </ul>
-                </motion.div>
+                </Slide>
               </div>
             </div>
           </div>
 
           <div className="content services">
-            <motion.div 
-            variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-            className="title">
+            <Slide delay={0.1} duration={1} className="title">
               <span className="first-word">My </span>Services
-            </motion.div>
+            </Slide>
             <div className="row service-items border-line-v">
               {Services.map((val, ind) => (
                 <div key={ind} className="col col-6 border-line-h">
-                 
-                    <motion.div
-                    variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-                     className="service-item">
-                      <div className="icon">
-                        <span>{val.icon}</span>
+                  <div className="service-item">
+                    <Slide delay={0.1} duration={1} className="icon">
+                      <span>{val.icon}</span>
+                    </Slide>
+                    <Slide delay={0.2} duration={1} className="name">
+                      <span>{val.name}</span>
+                    </Slide>
+                    <Slide delay={0.3} duration={1} className="desc">
+                      <div>
+                        <p>{val.desc}</p>
                       </div>
-                      <div className="name">
-                        <span>{val.name}</span>
-                      </div>
-                      <div className="desc">
-                        <div>
-                          <p>{val.desc}</p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  
+                    </Slide>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
           <div className="content hobby">
-            <motion.div
-            variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-             className="title" data-aos="fade-up">
+            <Slide
+              delay={0.1}
+              duration={1}
+              className="title"
+              data-aos="fade-up"
+            >
               <span>Hobbies</span>
-            </motion.div>
+            </Slide>
             <div className="row">
               <div className="col col-6 border-line-v">
                 <div className="hobby-list">
                   <ul>
-                    <motion.li
-                    variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-                    >
-                      <strong>Digital Art</strong>
-                    </motion.li>
-                    <motion.li
-                    variants={fadeIn("up", 0.3, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-                    >
+                    <Slide delay={0.1} duration={1}>
+                      <li>
+                        <strong>Digital Art</strong>
+                      </li>
+                    </Slide>
+                    <Slide delay={0.2} duration={1}>
+                    <li>
                       <strong>Coding</strong>
-                    </motion.li>
-                    <motion.li
-                    variants={fadeIn("up", 0.4, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-                    >
+                    </li>
+                    </Slide>
+                    <Slide delay={0.3} duration={1}>
+                    <li>
                       <strong>Travelling</strong>
-                    </motion.li>
-                    <motion.li
-                    variants={fadeIn("up", 0.5, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }}
-                    >
+                    </li>
+                    </Slide>
+                    <Slide delay={0.4} duration={1}>
+                    <li>
                       <strong>Reading</strong>
-                    </motion.li>
+                    </li>
+                    </Slide>
                   </ul>
                 </div>
               </div>

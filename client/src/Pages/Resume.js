@@ -3,130 +3,135 @@ import { SkillSet } from "../Config/Config";
 import { Experience, Education } from "../Config/Config";
 import { FaUniversity, FaBriefcase } from "react-icons/fa";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { fadeIn } from "../varients";
+import Slide from "../Components/Slide";
 
 function Resume() {
   return (
     <Wrapper>
-      <div className="card-inner" id="resume">
+      <div className="card-inner" id="resume"  >
         <div className="card-wrap">
           <div className="content resume">
-            <div className="title">
+            <Slide 
+            delay={0.2}
+            duration={1}
+        
+            className="title">
               <span>Resume</span>
-            </div>
+            </Slide>
             <div className="row">
               <div className="col col-6  border-line-v">
-                <div className="resume-title border-line-h" >
-                  <motion.div
-                   variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-                   className="icon">
+                <div className="resume-title border-line-h">
+                  <Slide
+                    delay={0.2}
+                    duration={1}
+                 
+                    className="icon"
+                  >
                     <FaBriefcase />
-                  </motion.div>
-                  <motion.div
-                   variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-                  className="name">Experience</motion.div>
+                  </Slide>
+                  <Slide
+                    delay={0.2}
+                    duration={1}
+                    className="name"
+                  >
+                    Experience
+                  </Slide>
                 </div>
                 <div className="resume-items">
                   {Experience &&
                     Experience.map((val, ind) => (
-                      <motion.div
-                        variants={fadeIn("up",(ind + 1)*0.1 + 0.1, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
+                      <div
                         key={val.id}
                         className={
                           val.date.includes("Present")
                             ? `${"resume"}-${"item"} ${"active"} ${"border"}-${"line"}-${"h"}`
                             : `${"resume"}-${"item"} ${"border"}-${"line"}-${"h"}`
                         }
-                        
                       >
-                        <div className="date">{val.date}</div>
-                        <div className="name">{val.name}</div>
-                        <div className="company">{val.company}</div>
-                        <div className="experience-desc">
-                          <ul>
-                            {val.desc.map((val) => (
-                              <li>{val}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </motion.div>
+                        <Slide
+                          delay={(ind + 1)*0.1}
+                          duration={1}
+                        >
+                          <div className="date">{val.date}</div>
+                          <div className="name">{val.name}</div>
+                          <div className="company">{val.company}</div>
+                          <div className="experience-desc">
+                            <ul>
+                              {val.desc.map((val, ind) => (
+                                <li
+                                key={ind}
+                                >{val}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </Slide>
+                      </div>
                     ))}
                 </div>
               </div>
               <div className="col col-6 border-line-v">
                 <div className="resume-title border-line-h">
-                  <motion.div
-                  variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-                   className="icon">
+                  <Slide
+                    delay={0.2}
+                    duration={1}
+                    className="icon"
+                  >
                     <FaUniversity />
-                  </motion.div>
-                  <motion.div 
-                  variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-                  className="name" >Education</motion.div>
+                  </Slide>
+                  <Slide
+                    delay={0.2}
+                    duration={1}
+                    className="name"
+                  >
+                    Education
+                  </Slide>
                 </div>
                 <div className="resume-items">
                   {Education &&
                     Education.map((val, ind) => (
-                      <motion.div
-                      variants={fadeIn("up", (ind + 1)*0.1 + 0.1, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
+                      <div
                         key={val.id}
                         className={
                           val.date.includes("Present")
                             ? `${"resume"}-${"item"} ${"active"} ${"border"}-${"line"}-${"h"}`
                             : `${"resume"}-${"item"} ${"border"}-${"line"}-${"h"}`
                         }
-                        
                       >
-                        <div className="date">{val.date}</div>
-                        <div className="name">{val.name}</div>
-                        <div className="company">{val.company}</div>
-                        <p>{val.desc}</p>
-                      </motion.div>
+                        <Slide
+                          delay={(ind + 1) * 0.1}
+                          duration={1}
+                        >
+                          <div className="date">{val.date}</div>
+                          <div className="name">{val.name}</div>
+                          <div className="company">{val.company}</div>
+                          <p>{val.desc}</p>
+                        </Slide>
+                      </div>
                     ))}
                 </div>
               </div>
             </div>
           </div>
           <div className="content skills">
-            <motion.div 
-             variants={fadeIn("up", 0.2, 1)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-            className="title">
+            <Slide
+              delay={0.1}
+              duration={1}
+              className="title"
+            >
               <span className="first-word">My </span>
               Skills
-            </motion.div>
+            </Slide>
             <div className="row grid-items border-line-v">
               <ul className="grid-item skill-sets">
-                {SkillSet && SkillSet.map((val, ind) => (
-                    <motion.li 
-                     variants={fadeIn("up", (ind)*0.05, 0.5)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: true }} 
-                    key={val.id} 
-                    >
-                      <div className="cards">
+                {SkillSet &&
+                  SkillSet.map((val, ind) => (
+                    <Slide
+                        delay={(ind + 1) * 0.01}
+                        duration={0.5}
+                      >
+                    <li key={val.id}>
+                     
+                        <div className="cards">
                         <div className="card-img">
                           <img
                             width="459"
@@ -138,8 +143,9 @@ function Resume() {
                         <div className="card-title">
                           <span className="title">{val.name}</span>
                         </div>
-                      </div>
-                    </motion.li>
+                        </div>
+                    </li>
+                    </Slide>
                   ))}
               </ul>
             </div>
@@ -249,6 +255,11 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  .grid-items{
+    min-height: 610px;
+  }
+
   @media (max-width: 420px) {
     .cards {
       width: 110px;

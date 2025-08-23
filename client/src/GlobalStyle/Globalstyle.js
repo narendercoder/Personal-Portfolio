@@ -230,11 +230,8 @@ input[type="submit"] {
   right: 0;
   top: 15px;
   bottom: 15px;
-  width: auto;
-  height: auto;
   border-radius: 0 4px 4px 0;
   transform-origin: center left;
-  ${'' /* z-index: 10; */}
   animation: fadeInLeft 1s;
   overflow: hidden;
 
@@ -274,6 +271,34 @@ input[type="submit"] {
   }
 }
 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-70%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeoutleft{
+  animation: fadeoutleft 1s;
+}
+
+@keyframes fadeoutleft {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(-70%, 0, 0);
+  }
+}
+
 .app.light .bg-bubbles li{
     background-color: hsla(0,0%,100%,.1) !important;
   }
@@ -292,17 +317,7 @@ input[type="submit"] {
     transform: translate3d(0, 0, 0);
   }
 }
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translate3d(-70%, 0, 0);
-  }
 
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 .row .col {
   position: relative;
@@ -521,8 +536,6 @@ col {
     position: relative;
     top: 60px;
     left: 0;
-    width: auto;
-    height: auto;
     max-width: 700px;
     max-height: initial;
     transform: none;
@@ -537,7 +550,7 @@ col {
 
 @media (max-width: 1199px) {
   .app {
-    height: auto;
+    height: 100%;
     display: block;
     overflow: hidden;
   }
@@ -574,7 +587,7 @@ col {
     z-index: 10;
     animation: fadeInTop 1s;
     .card-wrap {
-      height: auto;
+      height: 100%;
     }
   }
 }
@@ -592,7 +605,6 @@ a:hover {
 .skills .grid-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   .grid-item {
@@ -653,7 +665,7 @@ a:hover {
 
 
 .menu-btn .nav-link{
-  height: auto;
+  height: 100%;
   &::before{
       content:unset;
   }
