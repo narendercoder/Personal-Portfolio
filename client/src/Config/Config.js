@@ -278,7 +278,7 @@ export const Education=[
 
     {
         id: 1,
-        date: "Dec 2020-Present",
+        date: "Dec 2020-2024",
         name: "Maharaja Agrasen Institute of Technology",
         company: "Rohini Sec-22, Delhi-86",
         desc: "Btech Degree in Electrical and Electronic Engineering Maharaja Agrasen Institute of Technology, Rohini, Delhi"
