@@ -117,6 +117,16 @@ export const SkillSet=[
         id: 23,
         name: "Canva",
         imgsrc: "images/canva.png"
+    },
+     {
+        id: 23,
+        name: "Premiere Pro",
+        imgsrc: "images/premiere-pro.png"
+    },
+     {
+        id: 24,
+        name: "After Effects",
+        imgsrc: "images/after-effects.png"
     }
     
 ]
@@ -233,7 +243,7 @@ export const ProjImg = [
     {
         id: 13,
         name: "YT Shorts",
-        category: "video",
+        category: "video Editing",
         imgsrc: "",
         href: "ShVnv7_ru7A",
         desc: "",
@@ -241,36 +251,53 @@ export const ProjImg = [
     },
     {
         id: 14,
-        name: "graphics",
-        category: "graphics",
+        name: "YT Channel",
+        category: "video Editing",
         imgsrc: "",
-        href: "",
+        href: "https://www.youtube.com/@bhaktimelodystudio",
+        desc: "",
+        blurhash: "LAB4H~4Upfr;W8x_tTt79Zn#iaS%"
+    },
+    {
+        id: 15,
+        name: "Behance Portfolio",
+        category: "graphics",
+        imgsrc: "images/behance.png",
+        href: "https://www.behance.net/narenderbisht",
         desc: "",
         blurhash: "LAB4H~4Upfr;W8x_tTt79Zn#iaS%" 
     }
     
     ]
 export const Experience = [
-    {
+     {
         id: 1,
+        date: "Feb 2020 - Present",
+        name: "Digital Artist",
+        company: "",
+        desc: ["Self-taught digital artist on instagram"]
+    },
+    {
+        id: 2,
         date: "Mar 2024 - May 2024",
         name: "Web Developer Intern",
         company: "BasketHunt Pvt. Ltd.",
         desc: ["Collaborated with web development teams to design and implement innovative user interface features, enhancing user engagement and functionality.", "Monitored technical aspects of the front-end delivery for several projects."]
     },
     {
-        id: 2,
+        id: 3,
         date: "Sep 2021 - Mar 2022",
         name: "Graphic Designer",
         company: "Dharaksha Ecosolutions",
         desc: ["Collaborate with social media teams.","Design and update website.","Design different media post on Instagram."]
     },
-    {
-        id: 3,
-        date: "Feb 2020 - Present",
-        name: "Digital Artist",
-        company: "",
-        desc: ["Self-taught digital artist on instagram"]
+   
+     {
+        id: 4,
+        date: "May 2026 - Present",
+        name: "Video Annotator",
+        company: "Biz-Tech analytics pvt ltd",
+        desc: ["Freelancer for video annotation for AI training data."]
     },
     
 ]

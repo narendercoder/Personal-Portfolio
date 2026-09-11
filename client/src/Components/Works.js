@@ -23,7 +23,7 @@ const Works = ({ item }) => {
       <div className="box-item">
         <div className="image" style={{ height: "230px", overflow: "hidden" }}>
           
-          {item.category === "video" ? (
+          {item.category === "video Editing" ? (
             <iframe
               width="100%"
               height="100%"
